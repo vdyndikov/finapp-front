@@ -14,11 +14,11 @@ const Drawer = createDrawerNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer>
+    <NavigationContainer style={styles.container}>
       <Drawer.Navigator>
         <Drawer.Screen name='Login' component={Login}/>
-        <Drawer.Screen name='Earnings' component={Earnings}/>
         <Drawer.Screen name='Costs' component={Costs}/>
+        <Drawer.Screen name='Earnings' component={Earnings}/>
         <Drawer.Screen name='Settings' component={Settings}/>
         
       </Drawer.Navigator>
@@ -29,7 +29,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 2,
+    flex: 1,
     backgroundColor: '#11af92',
     alignItems: 'center',
     justifyContent: 'center',
