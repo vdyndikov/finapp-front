@@ -60,6 +60,7 @@ export default function Login() {
             <Button
                 title={'log out'}
                 style={styles.button}
+                onPress={clearToken}
             />
         </SafeAreaView>
     )
